@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chats Room</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Enter any chat room of your choice?</h3><br>
+        <input id="roomname" type="text" size="100"><br><br>
+        <input id="submit" type="button" value="Enter">
+    </div>
+    <script>
+        document.querySelector('#roomname').focus();
+        document.querySelector('#submit').onclick = function(e) {
+            var myRoom = document.querySelector('#roomname').value;
+            window.location.pathname = myRoom + '/';
+        };
+    </script>
+</body>
+</html>
